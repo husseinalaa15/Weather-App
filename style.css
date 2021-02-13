@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bdd4e7;
+background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    font-family: "Oswald",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+input{
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: inherit;
+    padding: 1rem ;
+    min-width: 300px;
+    font-size: 1rem;
+}
+input:focus{
+    outline: none;
+}
+.weather{
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    margin-top:-10%
+
+}
+.weather h2{
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    color:#323232;
+    width: 100%;
+
+
+}
+
+.backweather,
+.backweather-clear,
+.backweather-rain,
+.backweather-clouds,
+.backweather-mist,
+.backweather-snow,
+.backweather-smoke,
+.backweather-fog
+  {
+    background-blend-mode:screen;
+    background-color: #8693ab;
+    background-size: 100% 100%;
+    object-fit: cover;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    border-radius: 5%;
+    height: 300px;
+    
+}
+.backweather-clear{
+    background-image: url("clear.jpg") ;
+
+}
+.backweather-rain{
+    background-image: url("rain.jpg") ;
+
+}
+.backweather-clouds{
+    background-image: url("clouds.jpg") ;
+
+}
+.backweather-mist{
+    background-image: url("mist.jpg") ;
+
+}
+.backweather-snow{
+    background-image: url("snow.jpg");
+}
+.backweather-smoke{
+    background-image: url("smoke.jpg");
+}
+.backweather-fog{
+    background-image: url("fog.jpg");
+}
